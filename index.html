@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+  <form action="submit.php" id="std-info" method="post">
+    <fieldset>
+    <legend><h2>Student Registration Form!!</h2></legend>
+    <input type="text" name="name" id="name" placeholder="Enter name"> <!-- Added Name field -->
+    <p id="remark-name"></p>
+   <input type="text" name="reg_no" id="reg_no" placeholder="Enter Registration no. " >
+   <p id="remark-regno"></p>
+   <input type="text" name="roll_no" id="roll_no" placeholder="Enter Roll no." >
+   <p id="remark-rollno"></p>
+   <input type="text" name="branch" id="branch" placeholder="Enter branch name" >
+   <p id="remark-branch"></p>
+    <select name="gender" id="gender" >
+      <option value="">--select gender--</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+    <p id="remark-gender"></p>
+    <input type="number" name="semester" id="semester" placeholder="Semester" >
+    <p id="remark-sem"></p>
+    <input type="number" name="mobileno" id="mobile" placeholder="Enter Mobile no." >
+    <p id="remark-mobile"></p>
+    <input type="email" name="email" id="email" placeholder="Enter Email" >
+    <p id="remark-email"></p>
+    <textarea name="query" id="query" cols="12" placeholder="Write something"></textarea>
+    <div class="btn">
+    <input type="submit" value="Submit" id="submit">
+    <button id="reset">reset</button> 
+    </div>
+
+  </fieldset>
+  </form>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction:column ;
+    width: 450px;
+    margin: auto;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    /* justify-items: center; /* ⬅️ only horizontal centering */
+    /* place-items: center; ⬅️ centers content inside both horizontally and vertically */ 
+    border-radius: 10px;
+    background-color: rgb(216, 223, 253);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+fieldset p[id^="remark-"] {
+    color: red;
+    font-size: 0.7rem;
+    margin: 0;
+  }
+legend{
+    text-align: center;
+}
+h2{
+    text-shadow: 2px 2px 4px rgb(255, 255, 255);
+}
+form input,#query{
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#gender{
+    border: 2px solid #000;
+    width: 370px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn{
+    width: 370px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#submit{
+    border: none;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    width: max-content;
+    cursor: pointer;
+}
+#reset{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.js-remark{
+    border: 2px solid red;
+}
